@@ -13,9 +13,6 @@ use Spryker\Zed\Kernel\Communication\AbstractCommunicationFactory;
 
 class CartNoteMerchantPortalGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\CartNoteMerchantPortalGui\Communication\Expander\MerchantOrderItemTableExpanderInterface
-     */
     public function createMerchantOrderItemTableExpander(): MerchantOrderItemTableExpanderInterface
     {
         return new MerchantOrderItemTableExpander();

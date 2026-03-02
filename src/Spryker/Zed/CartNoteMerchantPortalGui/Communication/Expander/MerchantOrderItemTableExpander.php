@@ -25,11 +25,6 @@ class MerchantOrderItemTableExpander implements MerchantOrderItemTableExpanderIn
      */
     protected const COLUMN_TYPE_TEXT = 'text';
 
-    /**
-     * @param \Generated\Shared\Transfer\GuiTableConfigurationTransfer $guiTableConfigurationTransfer
-     *
-     * @return \Generated\Shared\Transfer\GuiTableConfigurationTransfer
-     */
     public function expandConfiguration(GuiTableConfigurationTransfer $guiTableConfigurationTransfer): GuiTableConfigurationTransfer
     {
         $guiTableColumnConfigurationTransfer = (new GuiTableColumnConfigurationTransfer())
@@ -44,11 +39,6 @@ class MerchantOrderItemTableExpander implements MerchantOrderItemTableExpanderIn
         return $guiTableConfigurationTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\GuiTableDataResponseTransfer $guiTableDataResponseTransfer
-     *
-     * @return \Generated\Shared\Transfer\GuiTableDataResponseTransfer
-     */
     public function expandDataResponse(GuiTableDataResponseTransfer $guiTableDataResponseTransfer): GuiTableDataResponseTransfer
     {
         foreach ($guiTableDataResponseTransfer->getRows() as $guiTableRowDataResponseTransfer) {
